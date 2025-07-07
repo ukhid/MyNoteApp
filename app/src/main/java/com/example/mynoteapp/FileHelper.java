@@ -33,7 +33,7 @@ public class FileHelper {
                 String receiveString;
                 StringBuilder stringBuilder = new StringBuilder();
                 while ((receiveString = bufferedReader.readLine()) != null) {
-                    stringBuilder.append(receiveString);
+                    stringBuilder.append(receiveString).append("\n");
                 }
                 inputStream.close();
                 fileModel.setData(stringBuilder.toString());
